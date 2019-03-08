@@ -187,7 +187,7 @@ team_names
 def player_numbers(teamname) #takes argument of the team name and returns an array of jersey numbers
 	array = []
 	game_hash.each do |team_playing, data|
-	  if data.team_name == 
+	  if data.team_name == teamname 
 		data.players.each do |attributes, values|
 		  
 			values.each do |player_number, player_data|
