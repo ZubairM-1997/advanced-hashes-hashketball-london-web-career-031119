@@ -188,8 +188,8 @@ def player_numbers(teamname) #takes argument of the team name and returns an arr
 	array = []
 	game_hash.each do |team_playing, data|
 	  if data.team_name == teamname 
-	  	data.players.each do |attributes, values|
-		  
+	  	data.players.each do |attributes, player|
+		    
 			values.each do |player_number, player_data|
 				if player_data == :number
 					array.push(player_number)
